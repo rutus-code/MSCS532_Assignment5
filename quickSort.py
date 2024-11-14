@@ -1,3 +1,7 @@
+# Created By : Rutu Shah
+# Created Date : 14th November 2024
+# Code :  Implementation of Quick sort algorithm
+
 def quicksort(arr):
    
     # Base case: arrays of length 0 or 1 are already sorted
