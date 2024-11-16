@@ -1,3 +1,8 @@
+# Created By : Rutu Shah
+# Created Date : 15th November 2024
+# Code :  Implementation of Empirical Analysis between Randomized and Quick sort algorithm.
+
+
 import random
 import time
 import matplotlib.pyplot as plt
@@ -45,7 +50,7 @@ def measure_time(sort_function, arr):
     sort_function(arr, 0, len(arr) - 1)
     return time.time() - start_time
 
-# Test cases
+# Test cases definition
 sizes = [100, 1000, 5000, 10000]
 distributions = ["random", "sorted", "reverse_sorted"]
 
@@ -71,7 +76,7 @@ for size in sizes:
         arr_copy = arr.copy()
         rand_time = measure_time(randomized_quicksort, arr_copy)
 
-        # Store results
+        # Storing the result of analysis between deterministic and randomized Quick sort algorithm
         results[dist]["deterministic"].append(det_time)
         results[dist]["randomized"].append(rand_time)
 
